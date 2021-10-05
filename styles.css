@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 10%;
+    background-color: antiquewhite;
+    color: rgb(48, 46, 46);
+}
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+footer{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+#sketchGrid {
+    display: grid;
+    background-color: white;
+    width: 50%;
+    box-shadow: gray 0 3px 8px;
+    padding: 0;
+}
+
+.aside {
+    width: 40%;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.blackMode, .rainbowMode, .eraser, .clear{
+    margin-top: .5rem;
+    border: 2px solid white;
+    padding: .2rem;
+    padding-left: 1rem;
+    width: 80%
+}
+
+.blackMode:hover, .rainbowMode:hover, .eraser:hover, .clear:hover{
+    background-color: bisque;
+    cursor: pointer;
+    transition: background .2s ease-in;
+}
+
+.color{
+    content: '';
+    background-color: rgb(61, 61, 61);
+    width: 25%;
+    height: 5.5rem;
+    border-radius: 50%;
+}
+
+.color:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px lightblue;
+    transition: .3s ease-out;
+}
+
+#sizeValue{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    background-color: lightgray;
+    width: 128px;
+    height: 7px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: rgb(61, 61, 61);
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+    
+  }
+
+  
