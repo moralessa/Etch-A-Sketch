@@ -9,9 +9,15 @@
 body {
     font-family: "Oswald", Arial, Helvetica, sans-serif;
     font-size: 16px;
-    margin: 10%;
+    margin: 20%;
     background-color: antiquewhite;
     color: rgb(48, 46, 46);
+}
+
+main{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
 }
 
 h1{
@@ -52,9 +58,6 @@ footer a:hover{
 .blackMode, .rainbowMode, .eraser, .clear{
     margin-top: .5rem;
     border: 2px solid white;
-    padding: .2rem;
-    padding-left: 1rem;
-    width: 80%
 }
 
 .blackMode:hover, .rainbowMode:hover, .eraser:hover, .clear:hover{
@@ -94,7 +97,6 @@ input[type='color']:hover {
 
 #sizeValue{
     margin-top: 1rem;
-    margin-left: 1rem;
 }
 
 input[type="range"]{
