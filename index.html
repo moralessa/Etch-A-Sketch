@@ -9,31 +9,37 @@
     <script src="https://kit.fontawesome.com/cacedf9b8e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <title>Etch-a-sketch</title>
 </head>
-<body>
+<body class="animate__animated animate__bounceIn">
     <header>
-        <h1>Etch-a-Sketch</h1>
+        <h1>Etch-a-Sketch
+            <i class="fas fa-palette" id="palette"></i>
+        </h1>
     </header>
 
     <br>
     <main class="container row">
         <div class="aside col-sm-6">
-            <div class="color"></div>
-            <div class="blackMode" id="black">Black Mode</div>
-            <div class="rainbowMode">Rainbow Mode</div>
-            <div class="eraser">Eraser</div>
-            <div class="clear">Clear</div>
+            <input id="color" type="color" value="#3d3d3d">
+            <div class="blackMode" id="black" >Black Mode</div>
+            <div class="rainbowMode" id="Rainbow">Rainbow Mode</div>
+            <div class="eraser" id="eraser">Eraser</div>
+            <div class="clear" id ="clear">Clear</div>
             <div id="sizeValue">32 x 32</div>
             <input type="range" id="sizeSlider" min="0" max="64">    
         </div>
         <div class="col-sm-6" id="sketchGrid"></div>
     </main>
-    
+    <br>
 
 
-    <footer>Copyright &copy moralessa <i class="fab fa-github"></i></footer>
+    <footer>Copyright &copy moralessa <a href="https://github.com/moralessa" class=""><i class="animate__animated animate__rubberBand fab fa-github"></i></a></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
