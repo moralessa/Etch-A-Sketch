@@ -12,21 +12,13 @@ c = slider.value;
 r = slider.value;
 
 
-btnBlack.addEventListener('click', () => {
-    blackColor();
-})
+btnBlack.addEventListener('click', blackColor);
 
-btnRainbow.addEventListener('click', () =>{
-    rainbowColor();
-})
+btnRainbow.addEventListener('click', rainbowColor);
 
-btnErase.addEventListener('click', () =>{
-    erase();
-})
+btnErase.addEventListener('click', erase);
 
-btnColor.addEventListener('click', () =>{
-    Color();
-})
+btnColor.addEventListener('click', Color);
 
 clear.addEventListener('click', () =>{
     reSet();
@@ -70,6 +62,11 @@ function Color(){
         }))
 }
 
+function rgbToHex(red, green, blue) {
+    const rgb = (red << 16) | (green << 8) | (blue << 0);
+    return '#' + (0x1000000 + rgb).toString(16).slice(1);
+  }
+
 function rainbowColor(){
     const boxs = grid.querySelectorAll('.box');
         boxs.forEach(box => box.addEventListener('mouseover', () => {
@@ -95,4 +92,3 @@ function erase () {
 
 createDivs(c, r);
 Color();
-
